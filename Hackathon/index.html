@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<style>
+
+	.card {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	.container {
+		padding: 0 16px;
+	}
+
+	.container::after, .row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	.title {
+		color: grey;
+	}
+
+	.button {
+		border: none;
+		outline: 0;
+		display: inline-block;
+		padding: 8px;
+		color: white;
+		background-color: #000;
+		text-align: center;
+		cursor: pointer;
+		width: 100%;
+	}
+
+	.button:hover {
+		background-color: #555;
+	}
+
+/* Bottom right text */
+.text-block {
+	opacity: 0.85;
+	background-color: grey;
+	width: 350px;
+	height: 200px;
+	/* border: px solid black; */
+	overflow: auto;
+	bottom: 0px;
+  right: 300px;
+	position: absolute;
+}
+
+.text-block2 {
+	/* opacity: 0.85; */
+	background-color: grey;
+	width: 350px;
+	height: 167px;
+	/* border: px solid black; */
+	overflow: auto;
+	bottom: -500px;
+  right: 300px;
+	position: absolute;
+}
+
+
+</style>
+<head>
+	<title>Vacasian</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+		<link rel="icon" type="image/png"
+		href="Logo.png" />
+	<header>
+		<div class="container">
+			<div id="branding">
+				<a href="index.html">
+					<img src="./images/event/Logo.png">
+				</a>
+
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="mission-statement">
+		<div class="container">
+			<h3>
+				<a href="ultimate.html"><button class ="button"> The Ultimate Getaway </button></a>
+			</h3>
+		</div>
+	</section>
+
+	<!-- Beginning of index -->
+	<section class="slides">
+			<div class="slideshow-container">
+					<link rel="stylesheet" type="css/text" href="css/slideshow.css">
+					<div class="mySlides fade" style="text-align: center">
+							<img class="image" src="./images/event/japan.jpg" style="width:75%;" height="650" width="1600">
+							<div class="text-block">
+									<div class="card">
+											<div class="container">
+												<h2>Japan</h2>
+												<p>Japan consists of several thousands of islands, of which Honshu, Hokkaido, Kyushu and Shikoku are the four largest. Japan's closest neighbors are Korea, Russia and China. The Sea of Japan separates the Asian continent from the Japanese archipelago.</p>
+
+
+											</div>
+									</div>
+							</div>
+					</div>
+					<div class="mySlides fade" style="text-align: center">
+							<img class="image" src="./images/event/southKorea.jpg" style="width:75%;" height="650" width="1600">
+							<div class="text-block">
+									<div class="card">
+											<div class="container">
+												<h2>South Korea</h2>
+												<p>It has coastlines along the Sea of Japan and the Yellow Sea. South Korea's topography consists mainly of hills and mountains but there are large coastal plains in the western and southern parts of the country.</p>
+
+											</div>
+									</div>
+							</div>
+					</div>
+					<div class="mySlides fade" style="text-align: center">
+							<img class="image" src="./images/event/taiwan.jpg" style="width:75%;" height="650" width="1600">
+							<div class="text-block">
+									<div class="card">
+											<div class="container">
+												<h2>Taiwan</h2>
+												<p>About two-thirds of Taiwan is a rugged mountain landscape with the Chung-yang Shan range central dominating the island, and some 200 peaks exceeding 9,840 ft. ... It claims numerous small islands within its immediate territories and off the coast of China, including the islands of Quemoy, Matsu and Wuchiu.</p>
+
+											</div>
+									</div>
+								</div>
+							</div>
+					</div>
+
+					<div class="mySlides fade" style="text-align: center">
+							<img class="image" src="./images/event/philippines.jpg" style="width:75%;" height="650" width="1600">
+							<div class="text-block">
+									<div class="card">
+											<div class="container">
+												<h2>Philippines</h2>
+												<p>The Philippines is a tropical country in Pacific Ocean, blessed with beautiful natural landscapes - and active volcanoes and extreme weather patterns.The Philippines, consisting of some 7,107 islands, is located in the western Pacific Ocean.</p>
+
+											</div>
+									</div>
+								</div>
+							</div>
+					</div>
+
+					<div class="mySlides fade" style="text-align: center">
+							<img class="image" src="./images/event/vietnam.jpg" style="width:75%;" height="650" width="1600">
+							<div class="text-block">
+									<div class="card">
+											<div class="container">
+												<h2>Vietnam</h2>
+												<p>Vietnam is a long, narrow nation shaped like the letter s. It is in Southeast Asia on the eastern edge of the peninsula known as Indochina. Its neighbors include China to the north and Laos and Cambodia to the west. </p>
+
+											</div>
+									</div>
+								</div>
+							</div>
+					</div>
+
+					<div class="mySlides fade" style="text-align: center">
+							<img class="image" src="./images/event/bangkok_capital.jpg" style="width:75%;" height="650" width="1600">
+							<div class="text-block">
+									<div class="card">
+											<div class="container">
+												<h2>Thailand</h2>
+												<p>Thailand is in the heart of Southeast Asia. Cambodia and Laos border the country to the east and northeast, and Myanmar lies to the northwest. To the west is the Andaman Sea and the Gulf of Thailand, southeast of Burma. The long southern region, connecting with Malaysia, is hilly and forested.</p>
+
+											</div>
+									</div>
+								</div>
+							</div>
+					</div>
+
+					<div class="mySlides fade" style="text-align: center">
+							<img class="image" src="./images/event/malay.jpg" style="width:75%;" height="650" width="1600">
+							<div class="text-block">
+									<div class="card">
+											<div class="container">
+												<h2>Malaysia</h2>
+												<p>Malaysia boasts one of south-east Asia's most vibrant economies, the fruit of decades of industrial growth and political stability. Consisting of two regions separated by some 640 miles of the South China Sea.</p>
+
+											</div>
+									</div>
+								</div>
+							</div>
+					</div>
+
+
+		<div style="text-align:center">
+		  <span class="dot" "></span>
+		  <span class="dot" "></span>
+			<span class="dot" "></span>
+		  <span class="dot" "></span>
+		  <span class="dot" "></span>
+		  <span class="dot" "></span>
+		  <span class="dot" "></span>
+		  <span class="dot" "></span>
+		  <span class="dot" "></span>
+		  <span class="dot" "></span>
+		  <span class="dot" "></span>
+
+		</div>
+	</section>
+
+	<section id="mission-statement">
+			<div class="container">
+				<h1>Our Picks</h1>
+			</div>
+	</section>
+
+	<div class="StaffPicture" style="text-align: center">
+			<img class="image" src="./images/event/TEAM.jpg" style="width:75%;" height="650" width="1600">
+			<div class="text-block2">
+				<div class="card">
+						<div class="container">
+							<h2>Our Picks</h2>
+							<p>~These are our picks for destinations in Asia~</p>
+							<a href="StaffP.html"><button class ="button">Learn More</button></a>
+						</div>
+				</div>
+			</div>
+	</div>
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 3 seconds
+}
+
+</script>
+</section>
+<!-- End of index -->
+</body>
+</html>

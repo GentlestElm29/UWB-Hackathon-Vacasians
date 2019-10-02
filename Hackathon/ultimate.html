@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	  <style type="text/css">
+		.centerImage
+		{
+		 text-align:center;
+		 display:block;
+		}
+		</style>
+
+</style>
+<head>
+	<title>Ultimate Getaway</title>
+	<br>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div id="branding">
+				<a href="index.html">
+				</a>
+                <h1>VACASIAN</h1>
+
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html">HOME</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+	<section id="mission-statement">
+		<div class="container">
+			<h1>The Ultimate Getaway</h1>
+			<br>
+			<br>
+			<br>
+			<h3><p> In this Ultimate Getaway, we've prepared a trip of a lifetime where
+			you will visit 7 COUNTRIES in 28 DAYS for an experience of a lifetime! </p></h3>
+	</section>
+
+	<!-- Beginning of index -->
+	<section class="slides">
+			<div class="slideshow-container">
+					<link rel="stylesheet" type="css/text" href="css/slideshow.css">
+					<div class="mySlides fade">
+						<center><img src="./images/event/map.jpg" class="centerImage" height="600" width="1000"> </center>
+					</div>
+				</div>
+				
+		<div style="text-align:center">
+		  <span class="dot" "></span>
+		  <span class="dot" "></span>
+		  <span class="dot" "></span>
+		</div>
+	</section>
+
+
+	<section id="mission-statement">
+			<div class="container">
+				<h3>7 Countries</h3>
+			</div>
+	</section>
+
+		<!-- Beginning of index -->
+		<section class="slides">
+				<div class="slideshow-container">
+					<link rel="stylesheet" type="css/text" href="css/slideshow.css">
+					<div class="mySlidesStaff fade">
+						<center><img src="./images/event/Chureito Pagoda, Japan.jpg" class="centerImage" height="600" width="1000"> </center>					
+						<br>
+						<br>
+						<br>
+					<div class="mySlidesStaff fade" style="text-align: center">
+						<center><img class="image" src="./images/event/Namsan Tower.jpg" class="centerImage" height="600" width="1000"> </center>
+												 </div>
+					</div>
+						<br>
+						<br>
+						<br>
+					<div class="mySlidesStaff fade" style="text-align: center">
+						<center><img class="image" src="./images/event/Taipei 101, Taiwan.jpg" class="centerImage" height="600" width="1000"> </center>
+							</div>
+					</div>
+						<br>
+						<br>
+						<br>
+					<div class="mySlidesStaff fade" style="text-align: center">
+						<center><img class="image" src="./images/event/El Nido, Philippines.jpg" class="centerImage" height="600" width="1000"> </center>
+							</div>
+					</div>
+						<br>
+						<br>
+						<br>
+					<div class="mySlidesStaff fade" style="text-align: center">
+						<center><img class="image" src="./images/event/Na Dang, Vietnam.jpg" class="centerImage" height="600" width="1000"> </center>
+							</div>
+					</div>
+						<br>
+						<br>
+						<br>
+					<div class="mySlidesStaff fade" style="text-align: center">
+						<center><img class="image" src="./images/event/Wiang Kum Kam, Thailand.jpg" class="centerImage" height="600" width="1000"> </center>
+							</div>
+					</div>
+						<br>
+						<br>
+						<br>
+					<div class="mySlidesStaff fade" style="text-align: center">
+						<center><img class="image" src="./images/event/Kuala Lumpur, Malaysia.jpg" class="centerImage" height="600" width="1000"> </center>
+							</div>
+					</div>
+				</div>
+
+				<div style="text-align:center">
+					<span class="dot1" "></span>
+					<span class="dot1" "></span>
+					<span class="dot1" "></span>
+				</div>
+			</section>
+
+<script>
+var slideIndex = 0;
+showSlides();
+showStaffSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 3 seconds
+}
+
+function showCountrySlides() {
+    var i;
+    var slides = document.getElementsByClassName("countriesSlide");
+    var dots = document.getElementsByClassName("dot1");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showStaffSlides, 5000); // Change image every 3 seconds
+}
+
+</script>
+</section>
+<!-- End of index -->
+
+</body>
+</html>
